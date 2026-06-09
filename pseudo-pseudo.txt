@@ -1,0 +1,38 @@
+The directions of a compass go in a circle: North, East, South, West.
+
+Create array holding N E S W
+
+runRobot function, take in x,y, orientation, commands, scents, maxX, maxY
+
+let currentX get the initial x co-ordinate
+let currentY get the initial y coordinate
+let currentIndex find the starting direction letter in the compass array
+
+loop through every letter in the commands string to get the current point
+get the command letter for this step
+
+if command is R for right
+move orientation index to +1
+if index goes beyond the scope of array then reset to North
+
+else if command is L for left
+move orientation index to -1
+If less than 1st array go back to West
+
+else if command is F to move forward
+Create the scent text for current spot and direction
+if scents already includes this spot, skips this F command and goes to the next command in the loop
+
+let nextX match currentX
+let nextY match currentY
+
+figure out if it's North and add 1 to nextY
+South and subtract 1 from nextY
+East and add 1 to nextX
+or West and subtract 1 from nextX
+
+if next position is out of bounds past maxX, less than 0, past maxY, or less than 0
+save this spot to the scents array so future robots stay safe
+mark as lost and return the last safe coordinates and direction string
+
+Save the new coordinates back to currentX and currentY so the robot moves
