@@ -12,10 +12,10 @@ console.log('--- STARTING MARTIAN ROBOTS SIMULATION ---');
 const robot1 = runRobot(1, 1, 'E', 'RFRFRFRF', scents, maxX, maxY);
 console.log('Robot 1 Output:', robot1);
 
-const robot2 = runRobot(4, 2, 'N', 'FRRFLLFFRRFLL', scents, maxX, maxY);
+const robot2 = runRobot(3, 2, 'N', 'FRRFLLFFRRFLL', scents, maxX, maxY);
 console.log('Robot 2 Output:', robot2);
 
-const robot3 = runRobot(4, 3, 'W', 'LFLLLRRRFLFL', scents, maxX, maxY);
+const robot3 = runRobot(0, 3, 'W', 'LLFFFLFLFL', scents, maxX, maxY);
 console.log('Robot 3 Output:', robot3);
 
 console.log('--- SIMULATION OVER ---');
